@@ -1,0 +1,6 @@
+COCOVANTA WEBSITE — FILE WEBSITE SAJA
+
+Seluruh isi folder/arsip ini adalah file website untuk document root hosting domain.
+Upload semua file dan folder di sini ke document root (mis. public_html), bukan folder ZIP sebagai subfolder.
+Cadangkan website lama terlebih dahulu. Pastikan domain mengarah ke hosting dan SSL aktif.
+Jangan hapus .htaccess jika hosting menggunakan Apache. File _headers dan _redirects hanya dipakai oleh platform hosting yang mendukungnya.
