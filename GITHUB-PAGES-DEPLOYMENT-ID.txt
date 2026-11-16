@@ -1,0 +1,21 @@
+COCOVANTA — GitHub Pages deployment
+
+1. Create a GitHub repository, for example: cocovanta-website.
+2. Upload the CONTENTS of this folder to the repository root (do not upload the parent folder itself).
+3. Open Settings > Pages.
+4. Under Build and deployment, choose Deploy from a branch.
+5. Select branch main and folder /(root), then Save.
+6. In Settings > Pages > Custom domain, enter cocovanta.web.id if it is not already detected from CNAME.
+7. Configure DNS at the domain registrar:
+   - A records for @: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+   - CNAME for www: <your-github-username>.github.io
+   If the registrar supports ALIAS/ANAME, follow GitHub's current guidance for apex domains.
+8. Wait for DNS propagation, then enable Enforce HTTPS in Settings > Pages.
+9. Test https://cocovanta.web.id, https://www.cocovanta.web.id, mobile navigation, every product page, contact/RFQ links, and 404 page.
+
+IMPORTANT:
+- Replace <your-github-username> with the actual GitHub account or organization name.
+- Do not configure both apex A records and a conflicting A/AAAA record from an old host.
+- GitHub Pages is static hosting. The current RFQ/contact flow is a client-side handoff (WhatsApp/email), not a server-side form database.
+- .htaccess and _headers are retained for portability but are not applied by GitHub Pages. Legacy redirect pages are static HTML redirects; verify old URLs manually.
+- CNAME is already set to cocovanta.web.id. Do not publish until you control the repository and DNS settings.
